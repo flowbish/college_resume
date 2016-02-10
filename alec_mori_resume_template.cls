@@ -28,9 +28,9 @@
 
 \usepackage{fontspec}
 
-\setmainfont[Color=primary, Path = Ubuntu/,BoldItalicFont=Ubuntu-BoldItalic,BoldFont=Ubuntu-Bold,ItalicFont=Ubuntu-Italic]{Ubuntu-Light} 
+\setmainfont[Color=primary, BoldItalicFont=Ubuntu-BoldItalic, BoldFont=Ubuntu-Bold, ItalicFont=Ubuntu-Italic]{Ubuntu-Light} 
 
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = sansSerif/]{Abel-Regular} 
+\setsansfont[Scale=MatchLowercase, Mapping=tex-text]{Abel-Regular} 
 
 %----------------------------------------------------------------------------------------
 %Contact Info
@@ -45,21 +45,21 @@
 \begin{minipage}[t]{0.4\textwidth}
 %First Name
 \color{headings}
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{42pt}{14pt}\selectfont #1
+\fontspec{Abel-Regular}\fontsize{42pt}{14pt}\selectfont #1
 %Last Name
 \color{headings}
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{42pt}{14pt}\selectfont#2%
+\fontspec{Abel-Regular}\fontsize{42pt}{14pt}\selectfont#2%
 \end{minipage}
 %
 \begin{minipage}[t]{0.6\textwidth}%
 \begin{flushright}%
 %Contact Info
 \color{headings}%
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{11pt}{14pt}\selectfont #3%
+\fontspec{Abel-Regular}\fontsize{11pt}{14pt}\selectfont #3%
 
 %Sites
 \color{headings}%
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{11pt}{14pt}\selectfont #4%
+\fontspec{Abel-Regular}\fontsize{11pt}{14pt}\selectfont #4%
 \end{flushright}%
 \end{minipage}%
 \vspace{5pt}
@@ -77,7 +77,7 @@
 \vspace{4pt}
 \noindent
 \color{headings}
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{16pt}{14pt}\selectfont \bf #1
+\fontspec{Abel-Regular}\fontsize{16pt}{14pt}\selectfont \bf #1
 \vspace{-14pt}
 \begin{flushleft}
 \makebox[\linewidth]{\color{headings}\rule{.91\paperwidth}{0.75pt}}
@@ -93,7 +93,7 @@
 %Arg2 - Date
 \newcommand{\subheader}[2]{
 \vspace{-6pt}
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{13pt}{14pt}\selectfont
+\fontspec{Abel-Regular}\fontsize{13pt}{14pt}\selectfont
 \begin{flushleft}
 \hspace{8pt}#1 \hfill #2
 \end{flushleft}
@@ -107,7 +107,7 @@
 %Arg1 - Line
 \newcommand{\information}[1]{
 \noindent
-\fontspec[Path = Ubuntu/]{Ubuntu-Light}\fontsize{11pt}{11pt}\selectfont
+\fontspec{Abel-Regular}\fontsize{12pt}{13pt}\selectfont
 \begin{minipage}[t]{.03\paperwidth}
 \hfill
 \end{minipage}
@@ -131,10 +131,10 @@
 \vspace{3pt}
 \noindent
 \color{headings}
-\fontspec[Path = sansSerif/]{Abel-Regular}\fontsize{16pt}{12pt}\selectfont \bf #1
+\fontspec{Abel-Regular}\fontsize{16pt}{12pt}\selectfont \bf #1
 \vspace{-14pt}
 \begin{flushleft}
-\makebox[\linewidth][l]{\color{headings}\rule{.42\paperwidth}{0.75pt}}
+\makebox[\linewidth][l]{\color{headings}\rule{\textwidth}{0.75pt}}
 \vspace{-10pt}
 \end{flushleft}
 }
@@ -146,7 +146,7 @@
 %Arg1 - Line
 \newcommand{\miniinformation}[1]{
 \vspace{-6pt}
-\fontspec[Path = Ubuntu/]{Ubuntu-Light}\fontsize{10.5pt}{12pt}\selectfont
+\fontspec{Abel-Regular}\fontsize{11pt}{12pt}\selectfont
 \hspace{6pt} #1
 
 \vspace{8pt}
