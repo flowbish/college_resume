@@ -1,9 +1,9 @@
 .PHONY: all clean
 
-all: porter_smith_resume.pdf
+all: main.pdf
 
-porter_smith_resume.pdf: porter_smith_resume.tex alec_mori_resume_template.cls
-	xelatex porter_smith_resume
+main.pdf: main.tex alec_mori_resume_template.cls
+	xelatex main
 
 clean:
 	rm -f *.log *.out *.aux *.pdf
