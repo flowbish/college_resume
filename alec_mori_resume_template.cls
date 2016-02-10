@@ -10,6 +10,7 @@
 \LoadClass{article}
 \usepackage[hmargin=1.0cm, vmargin=0.25cm]{geometry}
 \usepackage{hyperref}
+\usepackage[english]{isodate}
 
 %----------------------------------------------------------------------------------------
 %Colors
@@ -65,6 +66,22 @@
 \vspace{5pt}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{1.5pt}}%
 \vspace{-8pt} 
+}
+
+
+%----------------------------------------------------------------------------------------
+%Version Information
+%----------------------------------------------------------------------------------------
+\newcommand{\version}[1]{
+%\vspace{-5pt}
+\noindent
+\begin{minipage}[b][][b]{\textwidth}
+\begin{flushleft}
+\color{headings}
+\fontspec{Ubuntu-Light}\fontsize{11pt}{14pt}\selectfont
+\LaTeX | \isodate\today\ | #1
+\end{flushleft}
+\end{minipage}
 }
 
 %----------------------------------------------------------------------------------------
